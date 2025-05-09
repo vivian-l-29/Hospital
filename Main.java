@@ -1,5 +1,5 @@
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+import javax.swing.JFrame; // Para crear ventanas
+import javax.swing.JLabel; // Para mostrar texto en la interfaz 
 
 public class Main {
 
