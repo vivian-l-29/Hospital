@@ -1,4 +1,4 @@
-package vistas;
+package Vistas;
 
 import java.awt.Color;
 import java.awt.Dimension;
