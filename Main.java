@@ -13,6 +13,8 @@ public class Main {
         miVentana.setSize(1000, 800); // Establece el tamaño de la ventana (ancho x alto)
         miVentana.setLayout(new BorderLayout()); // Establece un BorderLayout para organizar los componentes en 5 zonas (NORTE, SUR, ESTE, OESTE y CENTRO)
         miVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Cierra la aplicación cuando se cierre la ventana
+        miVentana.setLocationRelativeTo(null);
+       
         // BannerPanel
         BannerPanel panelBanner = new BannerPanel(); // Crea una instancia del panel de banner
         miVentana.add(panelBanner.getJPanel(), BorderLayout.WEST);  // Agrega el panel al lado izquierdo (OESTE) de la ventana
