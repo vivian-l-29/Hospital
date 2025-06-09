@@ -1,20 +1,24 @@
 package ventanas;
-import java.awt.Color;
-import javax.swing.JFrame;
+
+import java.awt.*;
+import javax.swing.*;
+import vistas.MenuLateralPanel;
+import vistas.TablaPanel;
 
 public class DashBoard extends JFrame {
-    
 
- 
-    public DashBoard(){
-        this.setTitle("DashBoard");
-        this.setSize(1920,1080);
+    public DashBoard() {
+        this.setTitle("Vista-Doctor");
+        this.setSize(1920, 1080);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setLocationRelativeTo(null);
+        this.setLayout(new BorderLayout());
+
+        this.add(new MenuLateralPanel().getPanel());
+
+        TablaPanel tabla = new TablaPanel();
+        this.add(tabla, BorderLayout.CENTER);
+
         this.setVisible(true);
-        this.setBackground(Color.GREEN);
-       
-        
     }
-   public JFrame getJFrame(){
-return this;
-   }
 }
