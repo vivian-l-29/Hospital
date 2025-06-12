@@ -4,6 +4,7 @@ import java.awt.*;
 import javax.swing.*;
 import vistas.MenuLateralPanel;
 import vistas.TablaPanel;
+import vistas.HeaderPanel;
 
 public class DashBoard extends JFrame {
 
@@ -14,10 +15,9 @@ public class DashBoard extends JFrame {
         this.setLocationRelativeTo(null);
         this.setLayout(new BorderLayout());
 
-        this.add(new MenuLateralPanel().getPanel());
-
-        TablaPanel tabla = new TablaPanel();
-        this.add(tabla, BorderLayout.CENTER);
+        this.add(new HeaderPanel().getPanel(), BorderLayout.NORTH); // ✅ AGREGA EL HEADER
+        this.add(new MenuLateralPanel().getPanel(), BorderLayout.WEST); // lateral
+        this.add(new TablaPanel(), BorderLayout.CENTER); // centro
 
         this.setVisible(true);
     }
