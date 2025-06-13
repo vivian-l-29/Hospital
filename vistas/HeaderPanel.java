@@ -17,8 +17,7 @@ public class HeaderPanel extends JPanel {
 
         // ==== Cuadrito (simulando logo) ====
         JPanel logoPanel = new JPanel();
-        logoPanel.setPreferredSize(new Dimension(40, 40)); // tamaño del cuadro
-        logoPanel.setBackground(Color.GRAY);               // color gris como marcador
+        logoPanel.setPreferredSize(new Dimension(40, 40)); // tamaño del cuadro              
         logoPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK)); // borde negro
 
         // Centra verticalmente el cuadrito dentro del área derecha

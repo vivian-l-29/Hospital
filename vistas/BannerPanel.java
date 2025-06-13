@@ -12,7 +12,7 @@ public class BannerPanel {
         panelBanner = new JPanel();
         panelBanner.setPreferredSize(new Dimension(500, 800)); // Ancho x Alto
         panelBanner.setOpaque(true);
-        panelBanner.setBackground(Color.BLUE);
+        panelBanner.setBackground(new Color(230, 230, 230));
     }
     
     public JPanel getJPanel() {
