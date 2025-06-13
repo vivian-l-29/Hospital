@@ -52,3 +52,4 @@ public class MenuLateralPanel extends JPanel {
         return this;
     }
 }
+

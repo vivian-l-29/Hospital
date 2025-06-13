@@ -17,7 +17,7 @@ public class TablaPanel extends JScrollPane {
         // Este es el constructor de la clase.
         // El constructor es un método especial que se ejecuta automáticamente cuando creamos un nuevo objeto de esta clase.
 
-        String[] columnas = { "Nombre", "Cita", "Hora" };
+        String[] columnas = { "No", "Nombre", "Cita", "Hora" };
         // Aquí estamos creando un arreglo de String con los nombres de las columnas de la tabla.
         // Estos serán los títulos que se verán en la parte superior de la tabla.
 
@@ -36,7 +36,7 @@ public class TablaPanel extends JScrollPane {
         DefaultTableCellRenderer centrado = new DefaultTableCellRenderer();
         centrado.setHorizontalAlignment(SwingConstants.CENTER);
 
-        // NUEVO: Aplicar el renderizador a todas las columnas
+        // NUEVO: Aplicar el renderizador a todas las columnas   
         for (int i = 0; i < tabla.getColumnCount(); i++) {
             tabla.getColumnModel().getColumn(i).setCellRenderer(centrado);
         }
