@@ -13,7 +13,6 @@ public class HeaderPanel extends JPanel {
 
         // ==== Etiqueta con nombre del hospital ====
         JLabel nombreHospital = new JLabel("  Nombre Hospital"); // espacio para separar un poco del borde
-        nombreHospital.setFont(new Font("SansSerif", Font.PLAIN, 18));
         nombreHospital.setHorizontalAlignment(SwingConstants.LEFT);
 
         // ==== Cuadrito (simulando logo) ====
